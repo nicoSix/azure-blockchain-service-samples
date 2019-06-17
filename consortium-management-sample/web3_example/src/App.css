@@ -1,0 +1,9 @@
+#app .new-member-btn {
+  white-space:normal !important;
+  word-wrap: break-word; 
+  margin-bottom: 20px;
+}
+
+#app .align-right {
+  text-align: right;
+}

@@ -1,7 +1,7 @@
-var prompt = require('./node_modules/prompt');
+var prompt = require('prompt');
 
 var Members = artifacts.require("Members");
-var contract_address = "<Members smart-contract address>";
+var contract_address = "0xfb091e4feceec1869daba758de9e9ef00c2e4d7a";
 
 module.exports = function() {
   try {

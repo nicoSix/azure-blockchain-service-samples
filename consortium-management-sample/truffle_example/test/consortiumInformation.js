@@ -1,5 +1,5 @@
 var Members = artifacts.require("Members");
-var contract_address = "<Members smart-contract address>";
+var contract_address = "<Members contract address>";
 
 module.exports = async function() {
     try {

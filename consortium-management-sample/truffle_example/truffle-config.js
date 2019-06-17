@@ -1,8 +1,8 @@
 var Web3 = require("web3");
 
-var defaultNodeAddress = "<Your node URL>";
-var myAccount = "<Your Ethereum account public address>";
-var myPassword = "<Your Ethereum account password>";
+var defaultNodeAddress = "<your Azure Service main node address with access key>";
+var myAccount = "<your Member account>";
+var myPassword = "<your password>";
 
 module.exports = {
   networks: {

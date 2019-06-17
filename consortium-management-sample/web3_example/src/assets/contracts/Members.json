@@ -1,0 +1,500 @@
+{
+    "contractName": "Members",
+    "abi": [
+        {
+          "constant": true,
+          "inputs": [],
+          "name": "getAddressToReplace",
+          "outputs": [
+            {
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0xe8c757d6"
+        },
+        {
+          "inputs": [
+            {
+              "name": "_rootContract",
+              "type": "address"
+            },
+            {
+              "name": "_updateFrom",
+              "type": "address"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "constructor",
+          "signature": "constructor"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "name": "MemberJoinedEvent",
+          "type": "event",
+          "signature": "0x6907ef36b4ec2ac0dbcf68e4e88d58e46d33a9befbd092de26182eeb8a043104"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "name": "MemberLeftEvent",
+          "type": "event",
+          "signature": "0xce76cde84f41d02c564cb9c9416a2bb5deb93e11997544be0f46b97c1789bc49"
+        },
+        {
+          "constant": false,
+          "inputs": [],
+          "name": "activate",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x0f15f4c0"
+        },
+        {
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            },
+            {
+              "name": "_displayName",
+              "type": "string"
+            },
+            {
+              "name": "_subscriptionId",
+              "type": "string"
+            },
+            {
+              "name": "_account",
+              "type": "address"
+            }
+          ],
+          "name": "addMember",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x03934d76"
+        },
+        {
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            },
+            {
+              "name": "_displayName",
+              "type": "string"
+            },
+            {
+              "name": "_subscriptionId",
+              "type": "string"
+            },
+            {
+              "name": "_role",
+              "type": "string"
+            },
+            {
+              "name": "_account",
+              "type": "address"
+            }
+          ],
+          "name": "injectMember",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xd3ed8a52"
+        },
+        {
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            }
+          ],
+          "name": "removeMember",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xf55365a1"
+        },
+        {
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            },
+            {
+              "name": "_account",
+              "type": "address"
+            }
+          ],
+          "name": "setMemberAccount",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xa1b02a62"
+        },
+        {
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            },
+            {
+              "name": "_displayName",
+              "type": "string"
+            }
+          ],
+          "name": "setMemberDisplayName",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xf616c713"
+        },
+        {
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            },
+            {
+              "name": "_role",
+              "type": "string"
+            }
+          ],
+          "name": "setMemberRole",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x6f8124d5"
+        },
+        {
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            }
+          ],
+          "name": "getMemberSubscriptionId",
+          "outputs": [
+            {
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0xb4fd24e0"
+        },
+        {
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            }
+          ],
+          "name": "getMemberAccount",
+          "outputs": [
+            {
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0xf45d407e"
+        },
+        {
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            }
+          ],
+          "name": "getMemberDisplayName",
+          "outputs": [
+            {
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0x65d8b798"
+        },
+        {
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            }
+          ],
+          "name": "getMemberRole",
+          "outputs": [
+            {
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0x941a6cbd"
+        },
+        {
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            }
+          ],
+          "name": "getMemberStatus",
+          "outputs": [
+            {
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0x8e690fc5"
+        },
+        {
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_name",
+              "type": "string"
+            }
+          ],
+          "name": "getMemberCorrelationId",
+          "outputs": [
+            {
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0x2d5a8378"
+        },
+        {
+          "constant": true,
+          "inputs": [],
+          "name": "getAdminCount",
+          "outputs": [
+            {
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0x8b7bf3eb"
+        },
+        {
+          "constant": true,
+          "inputs": [],
+          "name": "getMemberCount",
+          "outputs": [
+            {
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0x997072f7"
+        },
+        {
+          "constant": true,
+          "inputs": [
+            {
+              "name": "iterator",
+              "type": "uint256"
+            }
+          ],
+          "name": "getMemberNameAtIndex",
+          "outputs": [
+            {
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0xbc245d3b"
+        },
+        {
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_subscriptionId",
+              "type": "string"
+            },
+            {
+              "name": "_role",
+              "type": "string"
+            }
+          ],
+          "name": "inviteMember",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xbfda3ebe"
+        },
+        {
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_subscriptionId",
+              "type": "string"
+            }
+          ],
+          "name": "removeInvitation",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0x4444bc75"
+        },
+        {
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_subscriptionId",
+              "type": "string"
+            },
+            {
+              "name": "_role",
+              "type": "string"
+            }
+          ],
+          "name": "setInvitationRole",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "signature": "0xb36420c1"
+        },
+        {
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_subscriptionId",
+              "type": "string"
+            }
+          ],
+          "name": "getInvitationRole",
+          "outputs": [
+            {
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0x45143a48"
+        },
+        {
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_subscriptionId",
+              "type": "string"
+            }
+          ],
+          "name": "getInvitationCorrelationId",
+          "outputs": [
+            {
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0x2dff0bed"
+        },
+        {
+          "constant": true,
+          "inputs": [],
+          "name": "getInvitationCount",
+          "outputs": [
+            {
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0x446d3d95"
+        },
+        {
+          "constant": true,
+          "inputs": [
+            {
+              "name": "iterator",
+              "type": "uint256"
+            }
+          ],
+          "name": "getInvitationSubscriptionIdAtIndex",
+          "outputs": [
+            {
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function",
+          "signature": "0xe5b6e678"
+        }
+    ]
+}

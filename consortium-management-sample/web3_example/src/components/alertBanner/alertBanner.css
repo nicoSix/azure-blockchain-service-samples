@@ -1,0 +1,15 @@
+#alertBanner .alertContent {
+    z-index: 1;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#alertBanner .alertWrapper {
+    text-align: center;
+}
+
+#alertBanner .hide {
+    display: none;
+}
