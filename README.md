@@ -2,7 +2,7 @@
 
 ## Overview 
 
-This repository hosts the code samples for the [Gaining expertise with Azure Blockchain Service - A guide for developers](./Documentation/Gaining%20expertise%20with%20Azure%20Blockchain%20Service%20-%20A%20guide%20for%20developers).
+This repository hosts the code samples for the [Gaining expertise with Azure Blockchain Service - A guide for developers](./Documentation/Gaining%20expertise%20with%20Azure%20Blockchain%20Service%20-%20A%20guide%20for%20developers.pdf).
 
 The main objective of this guide is to show you how to leverage Azure Blockchain Service, from service deployment to smart-contract creation. 
 
